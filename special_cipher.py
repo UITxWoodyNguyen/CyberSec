@@ -29,7 +29,7 @@ def decrypt(encrypted_str, key):
     decrypted_str = b16_decode(decrypted_str)
     return decrypted_str
 
-encryped_message = "mlnklfnknljflfmhjimkmhjhmljhjomhmmjkjpmmjmjkjpjojgjmjpjojojnjojmmkmlmijimhjmmj"
+encryped_message = " "
 for key in ALPHABET:
     decrypted_message = decrypt(encryped_message, key)
     print(f"Key: {key}, Decrypted Message: {decrypted_message}")
